@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" lang="pt">
+  <title>Novo Aluno</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jsaluno.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div id="cabe">
+      <img src="img/deeplogo.png">
+  <nav id="Menu">
+      <ul><a href="index.html"><p id="Pmenu">Home</a></ul>
+       <ul>   <a href="cursos.html">Cursos</a></ul>
+       <ul>   <a href="formulario-disciplina.html">Novas Disciplinas</a></ul>
+       <ul>   <a href="formulario-curso.html">Novos Cursos</a></ul>
+       <ul>   <a href="login.html">Login</a></p></ul>
+  </nav>
+</div>
+  </header>
+  <main>
+    <h1 class="titulo">Novo Aluno</h1>
+    <h2 class="titulo">Cadastro de dados</h2>
+    <div class="formulario">
+      <form class="n_aluno" name="n_aluno" action="" method="post" onsubmit="validacaoNovoAluno(this); return false;">
+
+
+        <div class="label">
+          <label for="login">Login:</label>
+        </div>
+        <div class="entrada">
+          <input type="text" name="n_login" id="n_login">
+        </div>
+        <div class="label">
+          <label for="n_nomec">Nome Completo:</label>
+        </div>
+        <div class="entrada">
+          <input type="text" name="n_nomec" id="n_nomec">
+        </div>
+        <div class="label">
+          <label for="email">E-mail</label>
+        </div>
+        <div class="entrada">
+          <input type="email" name="n_email" id="n_email">
+        </div>
+        <div class="label">
+          <label for="celular">Celular:</label>
+        </div>
+        <div class="entrada">
+          <input type="number" name="n_cel" id="n_cel">
+        </div>
+        <div class="label">
+          <label for="nascimento">Data de Nascimento</label>
+        </div>
+        <div class="entrada">
+          <input type="date" name="n_nasc" id="n_nasc">
+        </div>
+        <div class="label">
+          <label for="cpf">CPF</label>
+        </div>
+        <div class="entrada">
+          <input type="text" name="n_cpf" id="n_cpf" onblur="confirmaCPF(this.value);">
+        </div>
+        <div class="label">
+          <label for="senha">Senha</label>
+        </div>
+        <div class="entrada">
+          <input type="password" name="n_senha" id="n_senha">
+        </div>
+        <div class="label">
+          <label for="c_senha">Confirmação de Senha</label>
+        </div>
+        <div class="entrada">
+          <input type="password" name="n_csenha" id="n_csenha">
+        </div>
+        <div class="submit_btn">
+          <input class="s_btn" type="submit" value="Enviar" id='enviar'>
+        </div>
+      </form>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <p>"Valorize os pequenos começos"</p>
+  </footer>
+<script type="text/javascript" src="scriptAluno.js"></script>
+</body>
+</html>

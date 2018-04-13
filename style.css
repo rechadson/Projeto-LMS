@@ -1,0 +1,123 @@
+/*CSS de rodapé*/
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+}
+.footer p{
+    color: #E1E1E1;
+}
+/*CSS corpo da pagina*/
+body {
+    
+    margin: 0px;
+    font-family: 'Source Sans Pro';
+    background-color: dimgray;
+    color:black;
+}
+body p{
+    color: white;
+}
+body h2{
+    color: gold;
+}
+body h1{
+    color: gold;
+}
+body blockquote{
+    color: white;
+}
+/*CSS do Cabeçalho*/
+.cabe{
+    display: flex;
+    justify-content: space-between;
+    
+    white-space: nowrap
+}
+header {
+    background-color: black;
+    min-height: 4em;
+    padding: 0.6em;
+}
+header img {
+    width: 11.3em;
+    height: 50px;
+}
+#Menu{
+    float: right;
+}
+#Menu ul {
+    display: inline-block;
+    margin-top: 1em;
+    width: 30em;
+}
+#Menu ul a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+/*CSS do corpo*/
+.conteinerIMG{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.Imgindex{
+    width: 25%;
+    height: 15%;
+}
+.premio{
+    width: 10%;
+    height: 12%;
+}
+.imgpremios{
+    display: flex;
+    justify-content: center 
+}
+.eventos{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+@media(max-width:500px){
+    header {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: black;
+        min-height: 0;
+        padding-top: 0;
+    }
+    header img {
+        width: 20%;
+    }
+    
+    #Menu ul {
+        display: inline;
+        margin-top: 0;
+        width: 0;
+    }
+    #Menu ul a {
+        margin-left: 0;
+        margin-right: 0;
+        color: white;
+        text-decoration: none;
+    }
+
+    #menu{
+        display: block;
+        position: relative;
+    }
+    #Pmenu{
+        font-size: 9px;
+    }
+    h1,h2{
+        display: flex;
+        justify-content: center;
+        font-size: 9px;
+    }
+}
